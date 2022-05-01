@@ -4,11 +4,13 @@
     align-items: center;
     justify-content: center;
     /* height: 100vh; */
-    background: linear-gradient(
+    /* background: linear-gradient(
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       ),
-      url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+      url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,110,155,1) 0%, rgba(0,212,255,1) 100%);
     background-size: cover;
     background-position: center;
     
@@ -26,7 +28,7 @@
 }
 
 .hone{
-    color: rgb(77, 1, 77);
+    color: #006E9B; 
     text-align: center;
 }
 
@@ -35,7 +37,7 @@
     height: 50px;
     padding: 10px;
     border: none;
-    background-color: rebeccapurple;
+    background-color: #006E9B;
     color: white;
     border-radius: 5px;
     font-weight: bold;

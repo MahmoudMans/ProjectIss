@@ -160,7 +160,7 @@ export default function CohortTable() {
 
   return (
     <div className="tableau">
-      <Root sx={{ width: 500, maxWidth: "100%", padding: "50px" }}>
+      <Root sx={{ width: 900, maxWidth: "100%", padding: "50px" }}>
         <table aria-label="custom pagination table">
           <thead>
             <tr>
@@ -179,11 +179,11 @@ export default function CohortTable() {
               : cohortList
             ).map((row) => (
               <tr key={row.CohortName}>
-                <td>{row.CohortName}</td>
-                <td style={{ width: 120 }} align="right">
+                <td style={{ width: 170 }}>{row.CohortName}</td>
+                <td style={{ width: 170 }} align="right">
                   {row.NbrOfStudent}
                 </td>
-                <td style={{ width: 120 }} align="right">
+                <td style={{ width: 170 }} align="right">
                   <button
                     onClick={() => {
                       deleteCohorts(row._id);

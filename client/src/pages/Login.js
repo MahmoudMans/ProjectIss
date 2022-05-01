@@ -109,9 +109,11 @@ export default function Login() {
                 placeholder="password"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <button type="submit" className="submitButton">
-                <Link to="/Admin">Login</Link>
-              </button>
+              <Link to="/Admin">
+                <button type="submit" className="submitButton">
+                  Login
+                </button>
+              </Link>
             </form>
           </div>
         )}

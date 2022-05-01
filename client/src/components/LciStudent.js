@@ -156,7 +156,7 @@ function LciStudent() {
           </Paper>
           <Link to="/addlci">
             <Button variant="outlined" color="error">
-              LCI
+              Add LCI Student
             </Button>
           </Link>
         </div>

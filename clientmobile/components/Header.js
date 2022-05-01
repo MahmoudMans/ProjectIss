@@ -1,5 +1,4 @@
-import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
+import React from "react";
 import {
   Button,
   FlatList,
@@ -12,22 +11,18 @@ import {
   TextInput,
   View,
 } from "react-native";
-import Header from "./components/Header";
 
-export default function App() {
-  const [items, setItems] = useState([]);
-
+export default function Header({ title }) {
   return (
     <View style={styles.header}>
-      <Text style={styles.text}>Hello World</Text>
-      <Header title="wa3" />
-      <FlatList
-        data={items}
-        renderItem={({ item }) => <Text>{item.text}</Text>}
-      />
+      <Text style={styles.text}>{props.title}</Text>
     </View>
   );
 }
+
+Header.defaultProps = {
+  title: "Shopping List",
+};
 
 const styles = StyleSheet.create({
   container: {

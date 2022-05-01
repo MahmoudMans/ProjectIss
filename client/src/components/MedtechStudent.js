@@ -155,8 +155,8 @@ function Medtechstudent() {
             />
           </Paper>
           <Link to="/addmedtech">
-            <Button variant="outlined" color="error">
-              Medtech
+            <Button variant="contained" color="success">
+              Add Medtech Student
             </Button>
           </Link>
         </div>

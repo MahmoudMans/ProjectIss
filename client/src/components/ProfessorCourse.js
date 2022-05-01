@@ -178,7 +178,7 @@ export default function ProfessorCourse() {
   return (
     <div>
       <div className="tableau">
-        <Root sx={{ width: 500, maxWidth: "100%", padding: "50px" }}>
+        <Root sx={{ width: 900, maxWidth: "100%", padding: "50px" }}>
           <table aria-label="custom pagination table">
             <thead>
               <tr>
@@ -200,23 +200,23 @@ export default function ProfessorCourse() {
                 : professorList
               ).map((row) => (
                 <tr key={row.Id}>
-                  <td>{row.Id}</td>
-                  <td style={{ width: 120 }} align="right">
+                  <td style={{ width: 170 }}>{row.Id}</td>
+                  <td style={{ width: 170 }} align="right">
                     {row.Name}
                   </td>
-                  <td style={{ width: 120 }} align="right">
+                  <td style={{ width: 170 }} align="right">
                     {row.Email}
                   </td>
-                  <td style={{ width: 120 }} align="right">
+                  <td style={{ width: 170 }} align="right">
                     {row.Course}
                   </td>
-                  <td style={{ width: 120 }} align="right">
+                  <td style={{ width: 170 }} align="right">
                     {row.Freeday}
                   </td>
-                  <td style={{ width: 120 }} align="right">
+                  <td style={{ width: 170 }} align="right">
                     {row.RoomId}
                   </td>
-                  <td style={{ width: 120 }} align="right">
+                  <td style={{ width: 170 }} align="right">
                     <button
                       onClick={() => {
                         deleteTeachers(row._id);

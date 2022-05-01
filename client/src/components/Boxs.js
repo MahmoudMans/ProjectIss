@@ -171,7 +171,7 @@ function Boxs() {
           <Navbar />
           <div>
             <div className="tableau">
-              <Root sx={{ width: 500, maxWidth: "100%", padding: "50px" }}>
+              <Root sx={{ width: 700, maxWidth: "100%", padding: "50px" }}>
                 <table aria-label="custom pagination table">
                   <thead>
                     <tr>
@@ -189,11 +189,11 @@ function Boxs() {
                       : boxList
                     ).map((row) => (
                       <tr key={row.BoxName}>
-                        <td>{row.BoxName}</td>
-                        <td style={{ width: 120 }} align="right">
+                        <td style={{ width: 170 }}>{row.BoxName}</td>
+                        <td style={{ width: 170 }} align="right">
                           {row.Location}
                         </td>
-                        <td style={{ width: 120 }} align="right">
+                        <td style={{ width: 170 }} align="right">
                           <button
                             onClick={() => {
                               deleteBoxs(row._id);
