@@ -5,7 +5,7 @@ import FormInput from "../components/FormInput";
 import Sidebar from "../components/sidebar/Sidebar";
 import Navbar from "../components/navbar/Navbar";
 import { DarkModeContext } from "../components/context/darkModeContext";
-
+import "../components/style/dark.scss";
 const Classbooking = () => {
   const [classroomsList, setClassroomsList] = useState([]);
   const { darkMode } = useContext(DarkModeContext);
@@ -151,22 +151,27 @@ const Classbooking = () => {
                     }}
                     label="Reason"
                   />
-                  <label for="classroom">Choose a box:</label>
-                  <select
-                    name="classroom"
-                    id="classroom"
-                    onChange={(e) => {
-                      setClassName(e.target.value);
-                    }}
-                  >
-                    <option value="">choose a class</option>
-                    {classroomsList.map((cla) => {
-                      return (
-                        <option value={cla.ClassName}>{cla.ClassName}</option>
-                      );
-                    })}
-                    {/* <option value="volvo">Volvo</option> */}
-                  </select>
+                  <div className="formInput">
+                    <label className="formlabel" for="classroom">
+                      Choose a class:
+                    </label>
+                    <select
+                      className="selectsty"
+                      name="classroom"
+                      id="classroom"
+                      onChange={(e) => {
+                        setClassName(e.target.value);
+                      }}
+                    >
+                      <option value="">choose a class</option>
+                      {classroomsList.map((cla) => {
+                        return (
+                          <option value={cla.ClassName}>{cla.ClassName}</option>
+                        );
+                      })}
+                      {/* <option value="volvo">Volvo</option> */}
+                    </select>
+                  </div>
                   {/* <FormInput
                 id={8}
                 name="Class Name"

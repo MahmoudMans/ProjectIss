@@ -154,7 +154,7 @@ function MsbStudent() {
             />
           </Paper>
           <Link to="/addmsb">
-            <Button variant="outlined" color="secondary">
+            <Button variant="contained" color="secondary">
               Add MSB Student
             </Button>
           </Link>

@@ -33,7 +33,7 @@ const emailfin = cron.schedule("* 59 23 * * *", function () {
 
             let info = await transporter.sendMail({
               from: '"Mahmoud Mansouri " <mahmoudmansouri2001@gmail.com>',
-              to: `mahmoud.mansouri@medtech.tn`,
+              to: `${user.Email}`,
               subject: "Deadline Payment",
               text: "Si ça marche je suis vraiment trop fort",
               html: `<b>Dear Student,</b>
@@ -98,7 +98,7 @@ const emailfin = cron.schedule("* 59 23 * * *", function () {
 
             let info = await transporter.sendMail({
               from: '"Mahmoud Mansouri " <mahmoudmansouri2001@gmail.com>',
-              to: `mahmoud.mansouri@medtech.tn`,
+              to: `${user.Email}`,
               subject: "Deadline Payment",
               text: "Si ça marche je suis vraiment trop fort",
               html: `<b>Dear Student,</b>
@@ -162,7 +162,7 @@ const emailfin = cron.schedule("* 59 23 * * *", function () {
 
             let info = await transporter.sendMail({
               from: '"Mahmoud Mansouri " <mahmoudmansouri2001@gmail.com>',
-              to: `mahmoud.mansouri@medtech.tn`,
+              to: `${user.Email}`,
               subject: "Deadline Payment",
               text: "Si ça marche je suis vraiment trop fort",
               html: `<b>Dear Student,</b>

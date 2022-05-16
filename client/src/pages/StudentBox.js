@@ -157,20 +157,25 @@ function StudentBox() {
               }}
               label="Reason"
             />
-            <label for="boxs">Choose a box:</label>
-            <select
-              name="boxs"
-              id="boxs"
-              onChange={(e) => {
-                setBoxName(e.target.value);
-              }}
-            >
-              <option value="">choose a box</option>
-              {boxList.map((box) => {
-                return <option value={box.BoxName}>{box.BoxName}</option>;
-              })}
-              {/* <option value="volvo">Volvo</option> */}
-            </select>
+            <div className="formInput">
+              <label className="formlabel" for="boxs">
+                Choose a box:
+              </label>
+              <select
+                className="selectsty"
+                name="boxs"
+                id="boxs"
+                onChange={(e) => {
+                  setBoxName(e.target.value);
+                }}
+              >
+                <option value="">choose a box</option>
+                {boxList.map((box) => {
+                  return <option value={box.BoxName}>{box.BoxName}</option>;
+                })}
+                {/* <option value="volvo">Volvo</option> */}
+              </select>
+            </div>
             <button className="btnform" onClick={addToList}>
               Submit
             </button>

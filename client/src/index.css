@@ -17,3 +17,16 @@ code {
   background: none;
 
 }
+
+.speuni{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  padding: 30px;
+  margin: 30px;
+}
+
+.uniqspe{
+  margin: 20px;
+}

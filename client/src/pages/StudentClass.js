@@ -143,20 +143,27 @@ function StudentClass() {
                 }}
                 label="Reason"
               />
-              <label for="classroom">Choose a box:</label>
-              <select
-                name="classroom"
-                id="classroom"
-                onChange={(e) => {
-                  setClassName(e.target.value);
-                }}
-              >
-                <option value="">choose a class</option>
-                {classroomsList.map((cla) => {
-                  return <option value={cla.ClassName}>{cla.ClassName}</option>;
-                })}
-                {/* <option value="volvo">Volvo</option> */}
-              </select>
+              <div className="formInput">
+                <label className="formlabel" for="classroom">
+                  Choose a class:
+                </label>
+                <select
+                  className="selectsty"
+                  name="classroom"
+                  id="classroom"
+                  onChange={(e) => {
+                    setClassName(e.target.value);
+                  }}
+                >
+                  <option value="">choose a class</option>
+                  {classroomsList.map((cla) => {
+                    return (
+                      <option value={cla.ClassName}>{cla.ClassName}</option>
+                    );
+                  })}
+                  {/* <option value="volvo">Volvo</option> */}
+                </select>
+              </div>
               {/* <FormInput
                 id={8}
                 name="Class Name"

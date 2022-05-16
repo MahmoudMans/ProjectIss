@@ -5,6 +5,7 @@ import Axios from "axios";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 import { styled } from "@mui/system";
 import TablePaginationUnstyled from "@mui/base/TablePaginationUnstyled";
@@ -178,7 +179,7 @@ export default function ProfessorCourse() {
   return (
     <div>
       <div className="tableau">
-        <Root sx={{ width: 900, maxWidth: "100%", padding: "50px" }}>
+        <Root sx={{ width: 1300, maxWidth: "100%" }}>
           <table aria-label="custom pagination table">
             <thead>
               <tr>
@@ -187,7 +188,7 @@ export default function ProfessorCourse() {
                 <th>Email</th>
                 <th>Course</th>
                 <th>Free day</th>
-                <th>Room Id</th>
+                {/* <th>Room Id</th> */}
                 <th>buttons</th>
               </tr>
             </thead>
@@ -213,16 +214,16 @@ export default function ProfessorCourse() {
                   <td style={{ width: 170 }} align="right">
                     {row.Freeday}
                   </td>
-                  <td style={{ width: 170 }} align="right">
+                  {/* <td style={{ width: 170 }} align="right">
                     {row.RoomId}
-                  </td>
+                  </td> */}
                   <td style={{ width: 170 }} align="right">
                     <button
                       onClick={() => {
                         deleteTeachers(row._id);
                       }}
                     >
-                      delete
+                      <DeleteIcon />
                     </button>
                     {/* <button
                       onClick={() => {

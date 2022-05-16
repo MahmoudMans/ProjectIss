@@ -31,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
   colorText: {
     color: "#5AFF3D",
   },
+  colorTexts: {
+    color: "#fff",
+  },
   title: {
     color: "#fff",
     fontSize: "3rem",
@@ -38,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     paddingRight: "30px",
+    color: "#fff",
     paddingLeft: "30px",
   },
 }));
@@ -60,17 +64,19 @@ export default function Header() {
                   Class Booking
                 </Link>
               </Typography>
-              <Typography variant="h4" className={classes.appbarTitle}>
+              {/* <Typography variant="h4" className={classes.appbarTitle}>
                 <Link to="/officehourbooking" className="linkss">
                   Office Hour Booking
                 </Link>
-              </Typography>
+              </Typography> */}
               <Button
-                variant="contained"
+                variant="outlined"
                 color="success"
                 className={classes.button}
               >
-                <Link to="/login">Login</Link>
+                <Link className={classes.colorTexts} to="/login">
+                  Login
+                </Link>
               </Button>
             </Toolbar>
           </AppBar>

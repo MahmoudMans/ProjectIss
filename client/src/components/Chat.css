@@ -3,12 +3,14 @@
   height: 100vh;
   background: #fff;
   color: #212121;
+  padding-top: 180px;
   font-family: "Open Sans", sans-serif;
   display: grid;
   place-items: center;
 }
 
 .joinChatContainer {
+  padding-top: 140px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -47,6 +49,7 @@
 
   .chat-window {
     width: 300px;
+    padding-top: 200px;
     height: 420px;
   }
   

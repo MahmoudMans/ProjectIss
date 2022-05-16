@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
 import TablePaginationUnstyled from "@mui/base/TablePaginationUnstyled";
+import DeleteIcon from "@mui/icons-material/Delete";
 import Sidebar from "./sidebar/Sidebar";
 import Navbar from "./navbar/Navbar";
 import { DarkModeContext } from "./context/darkModeContext";
@@ -169,7 +170,7 @@ export default function Classrooms() {
         <div className="homeContainer">
           <Navbar />
           <div className="tableau">
-            <Root sx={{ width: 800, maxWidth: "100%", padding: "50px" }}>
+            <Root sx={{ width: 1300, maxWidth: "100%" }}>
               <table aria-label="custom pagination table">
                 <thead>
                   <tr>
@@ -189,23 +190,23 @@ export default function Classrooms() {
                     : classroomsList
                   ).map((row) => (
                     <tr key={row.ClassName}>
-                      <td>{row.ClassName}</td>
-                      <td style={{ width: 120 }} align="right">
+                      <td style={{ width: 170 }}>{row.ClassName}</td>
+                      <td style={{ width: 170 }} align="right">
                         {row.Location}
                       </td>
-                      <td style={{ width: 120 }} align="right">
+                      <td style={{ width: 170 }} align="right">
                         {row.Size}
                       </td>
-                      <td style={{ width: 120 }} align="right">
+                      <td style={{ width: 170 }} align="right">
                         {row.TypeOfClassrooms}
                       </td>
-                      <td style={{ width: 120 }} align="right">
+                      <td style={{ width: 170 }} align="right">
                         <button
                           onClick={() => {
                             deleteClassrooms(row._id);
                           }}
                         >
-                          delete
+                          <DeleteIcon />
                         </button>
                       </td>
                     </tr>

@@ -54,12 +54,15 @@ export default function Chat() {
         <div className="homeContainer">
           <Navbar />
           <div className="chatco">
-            <TableContainer component={Paper}>
-              <Table sx={{ minWidth: 200 }} aria-label="simple table">
+            <TableContainer
+              sx={{ width: 700, maxWidth: "100%" }}
+              component={Paper}
+            >
+              <Table sx={{ minWidth: 100 }} aria-label="simple table">
                 <TableHead>
                   <TableRow>
-                    <TableCell>Dessert (100g serving)</TableCell>
-                    <TableCell align="right">Calories</TableCell>
+                    <TableCell>Name of the professors</TableCell>
+                    <TableCell align="right">Room ID</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>

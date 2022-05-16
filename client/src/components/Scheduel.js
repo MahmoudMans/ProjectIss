@@ -312,7 +312,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Chip from "@mui/material/Chip";
 import { getDay } from "date-fns";
-
+import "./style/dark.scss";
 const PREFIX = "Demo";
 
 const classes = {
@@ -534,7 +534,7 @@ const Scheduel = () => {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, width: 300 }}>
+      <FormControl sx={{ m: 1, width: 300 }} className="scheinput">
         <InputLabel id="demo-multiple-chip-label">Chip</InputLabel>
         <Select
           labelId="demo-multiple-chip-label"
@@ -563,7 +563,7 @@ const Scheduel = () => {
           ))}
         </Select>
       </FormControl>
-      <Paper>
+      <Paper className="scheinput">
         <Scheduler data={courses} height={800}>
           <ViewState currentDate={currentDate} />
           <WeekView
@@ -572,7 +572,7 @@ const Scheduel = () => {
             timeTableCellComponent={TimeTableCell}
             dayScaleCellComponent={DayScaleCell}
           />
-          <Appointments />
+          <Appointments className="scheinput" />
         </Scheduler>
       </Paper>
     </div>

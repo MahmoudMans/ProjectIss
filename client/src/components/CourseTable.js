@@ -4,6 +4,8 @@ import "./CourseTable.css";
 import Axios from "axios";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
 import TablePaginationUnstyled from "@mui/base/TablePaginationUnstyled";
@@ -175,7 +177,7 @@ export default function CourseTable() {
 
   return (
     <div className="tableau">
-      <Root sx={{ width: 1000, maxWidth: "100%", padding: "50px" }}>
+      <Root sx={{ width: 1300, maxWidth: "100%" }}>
         <table aria-label="custom pagination table">
           <thead>
             <tr>
@@ -219,7 +221,7 @@ export default function CourseTable() {
                       deleteCourse(row._id);
                     }}
                   >
-                    delete
+                    <DeleteIcon />
                   </button>
                 </td>
               </tr>
